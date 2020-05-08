@@ -1,4 +1,5 @@
 import React from "react";
+import NumberButton from "./NumberButton";
 
 const Calculator = () => (
   <div>
@@ -6,16 +7,16 @@ const Calculator = () => (
       <h1>Calculator</h1>
     </div>
     <div className="number-pad">
-      <button>0</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
+      <NumberButton buttonValue={0} />
+      <NumberButton buttonValue={1} />
+      <NumberButton buttonValue={2} />
+      <NumberButton buttonValue={3} />
+      <NumberButton buttonValue={4} />
+      <NumberButton buttonValue={5} />
+      <NumberButton buttonValue={6} />
+      <NumberButton buttonValue={7} />
+      <NumberButton buttonValue={8} />
+      <NumberButton buttonValue={9} />
       <button>.</button>
       <button>+</button>
       <button>-</button>
@@ -24,6 +25,7 @@ const Calculator = () => (
       <button>=</button>
       <button>C</button>
       <button>+-</button>
+      <button>&lt;</button>
     </div>
   </div>
 );
