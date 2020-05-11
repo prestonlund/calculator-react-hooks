@@ -1,5 +1,6 @@
 import React from "react";
 import NumberButton from "./NumberButton";
+import ClearButton from "./ClearButton";
 
 const Calculator = () => (
   <div>
@@ -23,7 +24,7 @@ const Calculator = () => (
       <button>*</button>
       <button>/</button>
       <button>=</button>
-      <button>C</button>
+      <ClearButton />
       <button>+-</button>
       <button>&lt;</button>
     </div>

@@ -20,7 +20,12 @@ const NumberProvider = props => {
   };
 
   return (
-    <NumberContext.Provider value={handleSetDisplayValue}>
+    <NumberContext.Provider
+      value={{
+        handleSetDisplayValue,
+        handleClearValue
+      }}
+    >
       {props.children}
     </NumberContext.Provider>
   );
