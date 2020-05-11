@@ -13,17 +13,54 @@ const NumberProvider = props => {
     }
   };
 
+  const handleSetStoredValue = () => {
+    setStoredNumber(number);
+    setNumber("");
+  };
+
   const handleClearValue = () => {
     setNumber("");
     setStoredNumber("");
     setFunctionType("");
   };
 
+  const handleBackButton = () => {
+    if (number !== "") {
+      const deletedNumber = number.slice(0, number.length - 1);
+      setNumber(deletedNumber);
+    }
+  };
+
+  const handleSetCalcFunction = type => {
+    if (number) {
+      setFunctionType(type);
+      handleSetStoredValue();
+    }
+    if (storedNumber) {
+      setFunctionType(type);
+    }
+  };
+
+  const handleToggleNegative = () => {
+    if (number) {
+      if (number > 0) {
+        setNumber(`-${number}`);
+      } else {
+        const positiveNumber = number.slice(1);
+        setStoredNumber(positiveNumber);
+      }
+    }
+  };
+
   return (
     <NumberContext.Provider
       value={{
         handleSetDisplayValue,
-        handleClearValue
+        handleSetStoredValue,
+        handleClearValue,
+        handleBackButton,
+        handleSetCalcFunction,
+        handleToggleNegative
       }}
     >
       {props.children}
