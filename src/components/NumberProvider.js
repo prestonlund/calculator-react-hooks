@@ -13,6 +13,12 @@ const NumberProvider = props => {
     }
   };
 
+  const handleClearValue = () => {
+    setNumber("");
+    setStoredNumber("");
+    setFunctionType("");
+  };
+
   return (
     <NumberContext.Provider value={handleSetDisplayValue}>
       {props.children}
