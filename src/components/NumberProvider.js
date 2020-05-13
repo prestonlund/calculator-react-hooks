@@ -49,6 +49,11 @@ const NumberProvider = props => {
         const positiveNumber = number.slice(1);
         setStoredNumber(positiveNumber);
       }
+    } else if (storedNumber > 0) {
+      setNumber(`-${storedNumber}`);
+    } else {
+      const positiveNumber = storedNumber.slice(1);
+      setStoredNumber(positiveNumber);
     }
   };
 
