@@ -57,6 +57,44 @@ const NumberProvider = props => {
     }
   };
 
+  const doMath = () => {
+    if (number && storedNumber) {
+      switch (functionType) {
+        case "+":
+          setStoredNumber(
+            `${Math.round(
+              `${(parseFloat(storedNumber) + parseFloat(number)) * 100}`
+            ) / 100}`
+          );
+          break;
+        case "-":
+          setStoredNumber(
+            `${Math.round(
+              `${(parseFloat(storedNumber) - parseFloat(number)) * 1000}`
+            ) / 1000}`
+          );
+          break;
+        case "/":
+          setStoredNumber(
+            `${Math.round(
+              `${(parseFloat(storedNumber) / parseFloat(number)) * 1000}`
+            ) / 1000}`
+          );
+          break;
+        case "*":
+          setStoredNumber(
+            `${Math.round(
+              `${parseFloat(storedNumber) * parseFloat(number) * 1000}`
+            ) / 1000}`
+          );
+          break;
+        default:
+          break;
+      }
+      setNumber("");
+    }
+  };
+
   return (
     <NumberContext.Provider
       value={{
@@ -65,7 +103,12 @@ const NumberProvider = props => {
         handleClearValue,
         handleBackButton,
         handleSetCalcFunction,
-        handleToggleNegative
+        handleToggleNegative,
+        doMath,
+        functionType,
+        number,
+        storedNumber,
+        setNumber
       }}
     >
       {props.children}
