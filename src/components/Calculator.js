@@ -1,11 +1,13 @@
 import React from "react";
 import NumberButton from "./NumberButton";
 import ClearButton from "./ClearButton";
+import Display from "./Display";
 
 const Calculator = () => (
   <div>
     <div className="display">
       <h1>Calculator</h1>
+      <Display />
     </div>
     <div className="number-pad">
       <NumberButton buttonValue={9} />
