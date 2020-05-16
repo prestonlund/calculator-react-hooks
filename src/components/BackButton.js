@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { NumberContext } from "./NumberProvider";
 
 const BackButton = () => {
+  // useContext React hook
   const { handleBackButton } = useContext(NumberContext);
   return (
     <button

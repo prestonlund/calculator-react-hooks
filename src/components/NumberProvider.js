@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export const NumberContext = React.createContext();
 
 const NumberProvider = props => {
+  // React hooks
   const [number, setNumber] = useState("");
   const [storedNumber, setStoredNumber] = useState("");
   const [functionType, setFunctionType] = useState("");

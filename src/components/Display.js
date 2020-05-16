@@ -3,6 +3,7 @@ import { NumberContext } from "./NumberProvider";
 import { DisplayStyles } from "./styles/Styles";
 
 const Display = () => {
+  // useContext React hook
   const { number, storedNumber, functionType } = useContext(NumberContext);
   return (
     <DisplayStyles>

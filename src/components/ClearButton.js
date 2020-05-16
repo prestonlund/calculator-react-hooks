@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { NumberContext } from "./NumberProvider";
 
 const ClearButton = () => {
+  // useContext React hook
   const { handleClearValue } = useContext(NumberContext);
   return (
     <button
