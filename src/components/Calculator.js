@@ -3,6 +3,7 @@ import NumberButton from "./NumberButton";
 import ClearButton from "./ClearButton";
 import Display from "./Display";
 import BackButton from "./BackButton";
+import EqualButton from "./EqualButton";
 
 const Calculator = () => (
   <div>
@@ -26,7 +27,7 @@ const Calculator = () => (
       <button>-</button>
       <button>*</button>
       <button>/</button>
-      <button>=</button>
+      <EqualButton />
       <ClearButton />
       <button>+-</button>
       <BackButton />
