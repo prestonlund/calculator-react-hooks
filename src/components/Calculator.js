@@ -4,6 +4,8 @@ import ClearButton from "./ClearButton";
 import Display from "./Display";
 import BackButton from "./BackButton";
 import EqualButton from "./EqualButton";
+import FunctionButton from "./FunctionButton";
+import NegativeButton from "./NegativeButton";
 
 const Calculator = () => (
   <div>
@@ -23,13 +25,13 @@ const Calculator = () => (
       <NumberButton buttonValue={1} />
       <NumberButton buttonValue={0} />
       <NumberButton buttonValue="." />
-      <button>+</button>
-      <button>-</button>
-      <button>*</button>
-      <button>/</button>
+      <FunctionButton buttonValue="+" />
+      <FunctionButton buttonValue="-" />
+      <FunctionButton buttonValue="/" />
+      <FunctionButton buttonValue="*" />
       <EqualButton />
       <ClearButton />
-      <button>+-</button>
+      <NegativeButton />
       <BackButton />
     </div>
   </div>
