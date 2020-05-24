@@ -5,7 +5,7 @@ export const CalculatorStyles = styled.div`
   background: linear-gradient(
     90deg,
     rgba(33, 33, 33, 1) 0%,
-    rgba(56, 56, 56, 1) 67%,
+    rgba(56, 56, 56, 1) 68%,
     rgba(69, 69, 69, 1) 100%
   );
   width: 100%;
@@ -56,7 +56,7 @@ export const CalculatorStyles = styled.div`
       font-size: 2rem;
       color: white;
       font-family: "Raleway", sans-serif;
-      background: #e17055;
+      background: green;
       &:focus {
         outline: none;
       }
@@ -87,7 +87,7 @@ export const DisplayStyles = styled.div`
   margin: 10px auto;
   align-items: center;
   border-radius: 20px;
-  background: #e17055;
+  background: green;
   @media (max-width: 500px) {
     width: 95%;
     grid-template-rows: 60px 40px;
