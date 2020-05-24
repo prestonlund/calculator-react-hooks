@@ -56,7 +56,7 @@ export const CalculatorStyles = styled.div`
       font-size: 2rem;
       color: white;
       font-family: "Raleway", sans-serif;
-      background: #e17055;
+      background: green;
       &:focus {
         outline: none;
       }
