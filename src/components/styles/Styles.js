@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
 export const CalculatorStyles = styled.div`
-  background-color: #4abdac;
+  background: rgb(33, 33, 33);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(56, 56, 56, 1) 67%,
+    rgba(69, 69, 69, 1) 100%
+  );
   width: 100%;
   min-height: 100vh;
   display: grid;
@@ -13,7 +19,7 @@ export const CalculatorStyles = styled.div`
     padding: 5%;
   }
   .display {
-    font-family: "Orbitron", serif;
+    font-family: "Raleway", sans-serif;
     /* grid-area: display; */
     margin: 0 !important;
     width: 100%;
@@ -49,7 +55,7 @@ export const CalculatorStyles = styled.div`
       border: 3px solid white;
       font-size: 2rem;
       color: white;
-      font-family: "Orbitron", serif;
+      font-family: "Raleway", sans-serif;
       background: #e17055;
       &:focus {
         outline: none;
