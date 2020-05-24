@@ -20,8 +20,8 @@ const Calculator = () => (
         <BackButton />
         <NegativeButton />
         <FunctionButton buttonValue="/" />
-        <NumberButton buttonValue={7} />
         <NumberButton buttonValue={8} />
+        <NumberButton buttonValue={7} />
         <NumberButton buttonValue={9} />
         <FunctionButton buttonValue="*" />
         <NumberButton buttonValue={4} />
