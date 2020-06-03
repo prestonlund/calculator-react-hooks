@@ -10,7 +10,7 @@ const FunctionButton = ({ buttonValue }) => {
       type="button"
       onClick={() => handleSetCalcFunction(buttonValue)}
     >
-      {/* {buttonValue} === '*' ? 'X' : {buttonValue} */}
+      {/* Division and multiplication signs switch statement */}
       {(() => {
         switch (buttonValue) {
           case "*":

@@ -24,7 +24,7 @@ const Display = () => {
         }
       >
         {!storedNumber
-          ? "ENTER SOME NUMBERS"
+          ? "LET'S CALCULATE"
           : `${storedNumber} ${functionType} ${number}`}
       </p>
     </DisplayStyles>
