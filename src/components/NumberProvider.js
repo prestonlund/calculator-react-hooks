@@ -10,7 +10,8 @@ const NumberProvider = props => {
 
   const handleSetDisplayValue = num => {
     if ((!number.includes(".") || num !== ".") && number.length < 8) {
-      setNumber(`${(number + num).replace(/^0+/, "")}`);
+      // regex don't allow number lead with a '0'
+      setNumber(`${(number + num).replace(/^0+/, "0")}`);
     }
   };
 
