@@ -11,7 +11,7 @@ const NumberProvider = props => {
   const handleSetDisplayValue = num => {
     if ((!number.includes(".") || num !== ".") && number.length < 8) {
       // regex don't allow number lead with a '0'
-      setNumber(`${(number + num).replace(/^((?!(0))[0-9]{9})$/g)}`);
+      setNumber(`${number + num}`);
     }
   };
 
