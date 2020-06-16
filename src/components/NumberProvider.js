@@ -9,8 +9,13 @@ const NumberProvider = props => {
   const [functionType, setFunctionType] = useState("");
 
   const handleSetDisplayValue = num => {
-    if ((!number.includes(".") || num !== ".") && number.length < 8) {
-      // regex don't allow number lead with a '0'
+    // don't allow multiple '.'s
+    // don't allow following numbers after zero. Only '.'
+    if (
+      (!number.includes(".") || num !== ".") &&
+      number.length < 8 &&
+      !number.startsWith(0)
+    ) {
       setNumber(`${number + num}`);
     }
   };
