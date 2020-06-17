@@ -14,7 +14,8 @@ const NumberProvider = props => {
     if (
       (!number.includes(".") || num !== ".") &&
       number.length < 8 &&
-      !number.startsWith(0)
+      // regex zero not followed by a number
+      (!number.startsWith(0) && !number.match(/0/))
     ) {
       setNumber(`${number + num}`);
     }
