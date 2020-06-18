@@ -10,12 +10,11 @@ const NumberProvider = props => {
 
   const handleSetDisplayValue = num => {
     // don't allow multiple '.'s
-    // don't allow following numbers after zero. Only '.'
     if (
       (!number.includes(".") || num !== ".") &&
       number.length < 8 &&
-      // regex zero not followed by a number
-      (!number.startsWith(0) && !number.match(/0/))
+      // regex zero not followed by a number only a '.'
+      !number.startsWith(0)
     ) {
       setNumber(`${number + num}`);
     }
