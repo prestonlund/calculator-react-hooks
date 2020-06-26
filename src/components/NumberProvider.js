@@ -12,12 +12,12 @@ const NumberProvider = props => {
     // don't allow multiple '.'s
     if (
       (!number.includes(".") || num !== ".") &&
-      number.length < 8 &&
+      number.length < 8
       // regex zero not followed by a number only a '.' then any number after
       // .replace(/^0+/, '')
-      !number.startsWith(0)
+      // !number.startsWith(0)
     ) {
-      setNumber(`${number + num}`);
+      setNumber(`${(number + num).replace(/^0+/, "")}`);
     }
   };
 
