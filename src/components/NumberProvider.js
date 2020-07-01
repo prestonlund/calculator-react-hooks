@@ -13,7 +13,7 @@ const NumberProvider = props => {
     if (
       (!number.includes(".") || num !== ".") &&
       number.length < 8
-      // regex zero not followed by a number only a '.' then any number after
+      // regex zero not followed by a number only a '.' then any number after that
       // .replace(/^0+/, '')
       // !number.startsWith(0)
     ) {
