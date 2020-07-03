@@ -17,7 +17,7 @@ const NumberProvider = props => {
       // .replace(/^0+/, '')
       // !number.startsWith(0)
     ) {
-      setNumber(`${(number + num).replace(/^0+/, "")}`);
+      setNumber(`${number.replace(/^0+/, "") + num}`);
     }
   };
 
