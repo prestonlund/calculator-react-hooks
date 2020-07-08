@@ -51,7 +51,7 @@ export const CalculatorStyles = styled.div`
     button {
       width: 100%;
       height: 80px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
       border: 3px solid white;
       font-size: 2rem;
       color: white;
@@ -86,7 +86,7 @@ export const DisplayStyles = styled.div`
   max-width: 700px;
   margin: 10px auto;
   align-items: center;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background: #297d60;
   @media (max-width: 500px) {
     width: 95%;
