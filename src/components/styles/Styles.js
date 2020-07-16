@@ -72,6 +72,7 @@ export const CalculatorStyles = styled.div`
         font-weight: 500;
       }
     }
+    // function buttons
     button.function-button {
       background-color: #2d3436;
     }
