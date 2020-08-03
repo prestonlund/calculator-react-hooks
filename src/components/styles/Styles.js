@@ -5,7 +5,7 @@ export const CalculatorStyles = styled.div`
   background: linear-gradient(
     90deg,
     rgba(33, 33, 33, 1) 0%,
-    rgba(56, 56, 56, 1) 70%,
+    rgba(56, 56, 56, 1) 68%,
     rgba(69, 69, 69, 1) 100%
   );
   width: 100%;
