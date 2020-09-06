@@ -63,7 +63,7 @@ export const CalculatorStyles = styled.div`
       font-size: 2rem;
       color: white;
       font-family: "Raleway", sans-serif;
-      background: #297d60;
+      background: #1fbfff;
       &:focus {
         outline: none;
       }
@@ -95,7 +95,7 @@ export const DisplayStyles = styled.div`
   margin: 10px auto;
   align-items: center;
   /* border-radius: 20px; */
-  background: #297d60;
+  background: #1fbfff;
   @media (max-width: 500px) {
     width: 95%;
     grid-template-rows: 60px 40px;
