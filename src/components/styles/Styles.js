@@ -51,15 +51,10 @@ export const CalculatorStyles = styled.div`
     button {
       width: 100%;
       height: 80px;
-      /* border-radius: 20px; */
-      /* changes below */
-      /* border: 3px solid white; */
       border: 0;
       box-shadow: inset 0 0 0 2px #505050;
       cursor: pointer;
-      transform: translate(4px, 4px);
       text-decoration: none;
-      /* changes above */
       font-size: 2rem;
       color: white;
       font-family: "Raleway", sans-serif;
