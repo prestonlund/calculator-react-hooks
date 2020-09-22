@@ -12,7 +12,7 @@ const Calculator = () => (
   <CalculatorStyles>
     <div>
       <div className="display">
-        <h1>Fun Calculator</h1>
+        <h1>Calculator</h1>
         <Display />
       </div>
       <div className="number-pad">
