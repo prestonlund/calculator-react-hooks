@@ -52,12 +52,18 @@ export const CalculatorStyles = styled.div`
       width: 100%;
       height: 80px;
       border: 0;
-      box-shadow: inset 0 0 0 2px #505050;
+      box-shadow: inset 0 0 0 1px #505050;
       text-decoration: none;
       font-size: 2rem;
       color: white;
       font-family: "Raleway", sans-serif;
       background: #1fbfff;
+      @media (max-width: 800px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 500px) {
+        height: 60px;
+      }
       &:focus {
         outline: none;
       }
@@ -84,7 +90,7 @@ export const DisplayStyles = styled.div`
   display: grid;
   grid-template-rows: 90px 50px;
   grid-template-columns: 1fr;
-  border: 4px solid white;
+  border: 1px solid white;
   max-width: 700px;
   margin: 10px auto;
   align-items: center;
@@ -103,7 +109,7 @@ export const DisplayStyles = styled.div`
     font-size: 2.5rem;
     margin: 0;
     text-align: right;
-    border-bottom: 4px solid white;
+    border-bottom: 1px solid white;
     padding: 15px 20px;
     @media (max-width: 500px) {
       font-size: 1.5rem;
