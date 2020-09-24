@@ -51,7 +51,7 @@ export const CalculatorStyles = styled.div`
     button {
       width: 100%;
       height: 80px;
-      border: 0;
+      border: 1px solid white;
       box-shadow: inset 0 0 0 1px #505050;
       text-decoration: none;
       font-size: 2rem;
