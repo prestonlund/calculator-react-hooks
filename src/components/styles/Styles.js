@@ -63,8 +63,8 @@ export const CalculatorStyles = styled.div`
         outline: none;
       }
       &:hover {
-        border: 3px solid #dfe6e9;
-        font-weight: 500;
+        /* border: 1px solid #dfe6e9; */
+        /* font-weight: 500; */
       }
     }
     // function buttons
