@@ -53,7 +53,6 @@ export const CalculatorStyles = styled.div`
       height: 80px;
       border: 0;
       box-shadow: inset 0 0 0 2px #505050;
-      cursor: pointer;
       text-decoration: none;
       font-size: 2rem;
       color: white;
